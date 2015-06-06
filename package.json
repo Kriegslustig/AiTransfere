@@ -11,14 +11,8 @@
   },
 
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "express-busboy": "latest",
+    "underscore": "latest"
   },
-
-  "devDependencies": {
-    "mocha": "latest"
-  },
-
-  "scripts": {
-    "test": "mocha --watch --reporter dot test/ 2> /dev/null"
-  }
 }
