@@ -14,5 +14,5 @@
     "express": "latest",
     "express-busboy": "latest",
     "underscore": "latest"
-  },
+  }
 }
