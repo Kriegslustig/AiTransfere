@@ -12,7 +12,7 @@ function listenForFileUploads (form) {
 }
 
 function uploadFileFromForm (form) {
-  return uploadFile(form.getElementsByClassName('fileUpload')[0].files[0])
+  return uploadFile(form.getElementsByClassName('fileUpload__input')[0].files[0])
 }
 
 function uploadFile (file) {
