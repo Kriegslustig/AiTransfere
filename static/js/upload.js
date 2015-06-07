@@ -1,5 +1,4 @@
-
-window.addEventListener('load', function () {
+addEventListener('load', function () {
   listenForFileUploads(document.getElementsByClassName('fileUploadForm')[0])
 })
 
@@ -34,11 +33,11 @@ sendBack = (function () {
 
 function updateProgress (xhrReq, evt) {
   var progressBar = document.getElementsByClassName('progressBar')[0]
-  if(xhrReq.status && xhrReq.status !== 200) progressBar.style.backgroundColor = 'hsl(1, 60%, 80%)'
   progressBar.style.height = ((evt.loaded / evt.total) * 100) + 'vh'
+  if(xhrReq.status && xhrReq.status !== 200) progressBar.style.backgroundColor = 'hsl(1, 60%, 80%)'
 }
 
-function renderDone (xhrReq, event) {
+function renderDone (xhrReq, evt) {
   document.getElementsByClassName('messages')[0].innerHTML = xhrReq.response
 
 }

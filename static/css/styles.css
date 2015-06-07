@@ -9,6 +9,11 @@ h1 {
   line-height: 4rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
 header,
 main {
   padding: 1rem 2rem;
@@ -28,6 +33,11 @@ button:hover {
   cursor: pointer;
   padding: 0 calc(1rem - 2px);
   border: 2px solid hsl(84, 60%, 0%);
+}
+
+.fileUploadForm {
+  float: left;
+  display: block;
 }
 
 .fileUpload,
@@ -83,4 +93,9 @@ button:hover {
   bottom: 0;
   transition: height .4s;
   background-color: hsl(84, 60%, 80%);
+}
+
+.fileList {
+  margin-top: 2rem;
+  float: left;
 }
